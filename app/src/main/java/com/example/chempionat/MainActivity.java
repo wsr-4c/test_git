@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    // Переход на следующую страницу. Денисова. Участник 4. сессия 0
+    // Переход на следующую страницу. Денисова. Участник 4. сессия 0. 25/03/24
     public void Home(View v){
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
