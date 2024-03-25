@@ -7,19 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="408dp"
+        android:layout_height="1259dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
-    </LinearLayout>
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="184dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:text="@string/app_name">
+
+            </TextView>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
